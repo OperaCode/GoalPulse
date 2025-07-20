@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import NewsItem from "../components/NewsItem";
+import FeaturedMatch from "../components/FeaturedMatch";
+import BookmarksPage from "../components/Bookmarks";
 import { motion, AnimatePresence } from "framer-motion";
 import debounce from "lodash/debounce";
 
@@ -14,7 +16,7 @@ const categories = [
   "Transfers",
 ];
 
-const HomePage = () => {
+const Home = () => {
   const navigate = useNavigate();
   const [articles, setArticles] = useState([]);
   const [featured, setFeatured] = useState(null);
@@ -255,4 +257,5 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home
+;
