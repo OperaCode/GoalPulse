@@ -1,12 +1,28 @@
-# React + Vite
+⚽ GoalPulse
+GoalPulse is a dynamic football news and insights platform delivering real-time updates, featured matches, inspiring quotes, and a seamless fan experience – all in one app.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🚀 Features
+✅ Live Football News – Curated updates from top leagues: Premier League, La Liga, Serie A, Champions League, and more.
+✅ Hero Banner – Displays the featured trending news with visuals and CTA.
+✅ Search & Filter – Find news by category or keyword easily.
+✅ Pagination – Load more news articles smoothly.
+✅ Bookmarks – Save articles for later reading, stored in local storage.
+✅ Responsive UI – Fully responsive design for all screen sizes.
+✅ Daily Quotes – Motivational football quotes to keep fans inspired (coming soon).
+✅ Featured Matches – Highlights of ongoing or upcoming matches (coming soon).
+✅ Beautiful Animations – Built with Framer Motion for smooth user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
+Frontend: React.js, Tailwind CSS
 
-## Expanding the ESLint configuration
+State Management: React Hooks & Context
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Animations: Framer Motion
+
+Icons: Lucide React
+
+API: NewsAPI.org for live football news
+
+Utilities: Lodash debounce
+
