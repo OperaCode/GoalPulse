@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import NewsItem from "../components/NewsItem";
 import { motion, AnimatePresence } from "framer-motion";
 import debounce from "lodash/debounce";
+import { Trophy } from "lucide-react";
+
 
 const categories = [
   "All",
@@ -107,18 +109,19 @@ const Home = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Navbar */}
       <header className="flex justify-between items-center px-6 py-4 bg-gray-800 sticky top-0 z-20 shadow-lg">
+        <Link to="/">
         <button
-          onClick={() => navigate(-1)}
+          
           className="text-green-400 hover:text-green-300 transition"
           aria-label="Go back"
         >
           ← Back
         </button>
-        <Link to="/">
-          <h1 className="text-2xl font-bold flex items-center gap-2 cursor-pointer">
-            GoalPulse
-          </h1>
         </Link>
+         <h1 className="text-2xl font-bold flex items-center gap-2">
+          <Trophy size={24} className="text-green-400 animate-pulse" />
+          GoalPulse
+        </h1>
         <Link to="/bookmarks">
           <button
             className="bg-green-600 px-4 py-2 rounded-full font-medium hover:bg-green-500 transition"
@@ -144,7 +147,7 @@ const Home = () => {
               })`,
             }}
             role="banner"
-            aria-label="Featured news article"
+            
           >
             <div className="absolute inset-0 bg-black bg-opacity-50" />
             <div className="relative z-10 max-w-3xl text-center px-4">

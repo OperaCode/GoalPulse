@@ -78,7 +78,7 @@ const Landing = () => {
       <section
         id="features"
         ref={featuresRef}
-        className={`px-4 py-16 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 transition duration-700 ${
+        className={`px-4 py-16 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 transition duration-700 ${
           isVisible.features ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -93,16 +93,7 @@ const Landing = () => {
             title: "Latest Football News",
             desc: "Stay updated with live match reports and transfer news.",
           },
-          {
-            icon: (
-              <Users
-                size={36}
-                className="mx-auto mb-4 text-green-400 animate-pulse"
-              />
-            ),
-            title: "Fan Community",
-            desc: "Discuss, share predictions, and engage with other fans.",
-          },
+         
           {
             icon: (
               <Bookmark
@@ -116,7 +107,7 @@ const Landing = () => {
         ].map((feature, i) => (
           <div
             key={i}
-            className="bg-white/10 p-6 rounded-xl text-center backdrop-blur-lg hover:bg-white/20 transition shadow-md"
+            className="bg-white/10 p-6 rounded-xl  text-center backdrop-blur-lg hover:bg-white/20 transition shadow-md"
           >
             {feature.icon}
             <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
