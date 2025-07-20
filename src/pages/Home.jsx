@@ -2,8 +2,6 @@ import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import NewsItem from "../components/NewsItem";
-import FeaturedMatch from "../components/FeaturedMatch";
-import BookmarksPage from "../components/Bookmarks";
 import { motion, AnimatePresence } from "framer-motion";
 import debounce from "lodash/debounce";
 
